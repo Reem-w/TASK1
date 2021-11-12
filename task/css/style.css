@@ -50,6 +50,10 @@ nav .containor .links a:hover{
  
 }
 /**end nav **/
+.row{
+    overflow: hidden;
+    margin-bottom: 10%;
+}
 
 h2{
     color: #817d7d;
@@ -67,8 +71,8 @@ h2{
 }
 
 .left img{
-    width: 260px;
-    height: 114px;
+    width: 40%;
+    /*height: 114px;*/
     margin: 17px 0px 17px 17px;
 }
 
@@ -79,8 +83,8 @@ h2{
 }
 
 .right img{
-   height: 84px;
-  width: 131px;
+  /* height: 84px;*/
+  width: 58%;
   margin: 10px 0px 10px 13px;
 }
 
@@ -93,9 +97,25 @@ h2{
     padding: 20px;
     text-align: center;
     background: rgb(78 75 75);
-    margin-top: 685px;
+   
   }
 
   .footer h2{
       color: white;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .left ,  .right {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
   }
